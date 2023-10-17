@@ -95,7 +95,7 @@ where
             });
         }
 
-        // unwrap/expecrt is safe as we previously checked for the key existing
+        // unwrap/expect is safe as we previously checked for the key existing
         let token = req
             .headers()
             .get(HEADER_KEY)
