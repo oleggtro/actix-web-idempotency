@@ -17,6 +17,9 @@ use chrono::{DateTime, Utc};
 use serde::Serialize;
 use uuid::Uuid;
 
+// The header to use. Defaults to 'Idempotency-Key' as defined in this IETF memo:
+//
+// https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-01.html
 const HEADER_KEY: &str = "Idempotency-Key";
 
 pub struct Idempotency;
